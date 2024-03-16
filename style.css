@@ -1,0 +1,305 @@
+/* Add your existing styles here, and append the following: */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff; /* Assuming a white background */
+    position: fixed;
+}
+
+.background-image-container {
+    background-image: url('DALL·E\ 2024-03-13\ 15.42.00\ -\ friendly\ and\ colorful\ abstract\ concept\ of\ people\ studying\ together\,\ with\ books\,\ digital\ tablets\,\ and\ a\ warm\ atmosphere\,\ in\ a\ 16_9\ ratio.webp'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh; /* This will make the height of the image container the full height of the viewport */
+    width: 100%; /* This will ensure that the div takes the full width of the viewport */
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    height: 150vh; /* Adjust the height as needed */
+    /* Leave the background image empty as requested */
+    /* background-image: url('path-to-your-image.jpg'); */
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.header-section h1 {
+    font-size: 7.5em; /* Adjust the font size as needed */
+    margin-bottom: 0.2em;
+}
+
+.header-section p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    max-width: 900px; /* Adjust the width as needed */
+}
+
+
+/* Ensure the container elements do not restrict the width of the background image container */
+.header-container,
+.search-container {
+    width: 98.9%;
+    /* Other styles... */
+}
+
+
+
+.logo {
+    width: 170px; /* Adjust to fit your actual logo size */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; /* Color for the links */
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    padding: 1rem;
+    width: 1870px;
+    background-color: #000000; /* Light grey background */
+}
+
+.search-bar {
+    width: 300px; /* Adjust as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #cb74e0; /* Bootstrap primary blue */
+    color: white;
+    cursor: pointer;
+}
+
+.category-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+}
+
+.category {
+    flex-basis: 20%; /* Adjust depending on number of categories */
+}
+
+.category img {
+    width: 100px; /* Adjust to fit the size of your icons */
+    margin-bottom: 1rem;
+}
+
+.featured-courses-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.course img {
+    width: 100%; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.category-text {
+    text-align: left;
+}
+
+
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e4cc7e; /* Your background color */
+}
+
+.categories h1 {
+    color: #750f6b;
+    margin-bottom: 10px;
+}
+
+.categories p {
+    color: #750f6b;
+    margin-bottom: 20px;
+}
+
+.explore-more {
+    background-color: #cb74e0; /* Your button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Decreases the gap between the grid items */
+    padding: 20px; /* Padding around the entire grid */
+    max-width: 1200px; /* Max width can be adjusted as needed */
+    margin: auto; /* Centers the grid in the available space */
+}
+
+
+.category-card {
+    background-color: #FFFFFF; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
+    padding: 0px; /* Space inside the card */
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+    width: 272px; /* Set a fixed width */
+    height: 310px; /* Set a fixed height */
+    margin: auto; /* Center the card in the available space */
+    
+    
+}
+.category-card:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 1200px) {
+    .categories-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for even smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .categories-container {
+        grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+}
+.featured-courses-header {
+    
+    color: #ffffff; /* This is the text color */
+    text-indent: 150px;
+    text-align: left;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.featured-courses-header h1 {
+    font-size: 3.5rem; /* Adjust the size as needed */
+    margin-bottom: 0.5rem; /* Adjust the space between the heading and the paragraph */
+    font-weight: bold; /* Make the font bold */
+}
+
+.featured-courses-header p {
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+
+.category-card img {
+    max-width: 100%; /* Maximum image width */
+    height: 270px; /* Keep image aspect ratio */
+    margin-bottom: 50px; /* Space between image and text */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.category-card h3 {
+    color: #333333; /* Text color */
+    font-size: 1.3em; /* Text size */
+    margin-top: -30px;
+}
+.featured-courses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course {
+    position: relative;
+    margin: 0;
+}
+
+.course-img {
+    width: 100vw; /* Adjust the width as necessary */
+    transition: transform 0.5s ease;
+}
+
+.course-img:hover {
+    transform: scale(1.05); /* Adjust scaling factor as desired */
+}
+
+.course-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fbff05;
+    height:  24%;
+    text-align: left;
+}
+.course-text p{
+    color: #f5f3f3;
+}
+
+.course-text h3, .course-text p {
+    margin: 20px 5;
+    transition: transform 0.5s ease;
+    
+}
+.course-text h3, .course-text p:hover {
+    transform: scale(1.05); /* Adjust scaling factor as desired */
+}
+
+/* Add media query for responsiveness if needed */
+@media (max-width: 768px) {
+    .featured-courses-container {
+        flex-direction: column;
+        
+    }
+}
+
+
+
+/* Continue styling each element to match the provided image exactly */
