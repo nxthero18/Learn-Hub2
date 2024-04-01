@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff; /* Assuming a white background */
+    position: fixed;
+}
+
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    height: 150vh; /* Adjust the height as needed */
+    /* Leave the background image empty as requested */
+    /* background-image: url('path-to-your-image.jpg'); */
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.header-section h1 {
+    font-size: 7.5em; /* Adjust the font size as needed */
+    margin-bottom: 0.2em;
+}
+
+.header-section p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    max-width: 900px; /* Adjust the width as needed */
+}
+
+
+.header-container,
+.search-container {
+    width: 98.9%;
+    /* Other styles... */
+}
+
+
+
+.logo {
+    width: 200x; /* Adjust to fit your actual logo size */
+    outline: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; /* Color for the links */
+    font-weight: bold;
+}
+
+  @media (max-width: 600px) {
+    .stats-container {
+      flex-direction: column;
+    }
+    .stats-block {
+      flex-direction: row;
+    }
+  }
+ 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+    background-color: #ffffff; /* Adjust to match your color */
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo img {
+    max-width: 1200px; /* Adjust to the size of your logo */
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.footer h3 {
+    color: #159e20;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 200px;
+}
+
+.footer ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.contact-info p, .footer-bottom p {
+    margin: 5px 10px;
+    line-height: 1.5;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 1000%;
+    padding-top: 350px;
+    padding-right: 5050px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-section {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}
+.courses{
+    padding: 100px;
+}
+.courses .p{
+    color: black;
+}
