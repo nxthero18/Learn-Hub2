@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-image: url(images/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -48,9 +48,6 @@ body{
     color: #fff;
     padding-bottom: 15px;
     margin: 0 25px;
-}
-.link:hover, .active{
-    border-bottom: 2px solid #fff;
 }
 .nav-button .btn{
     width: 130px;
